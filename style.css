@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #2a2fd0;
+}
+
+
+.main {
+    min-height: 100vh;
+    background-image: url('./pictures/Frame\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+
+
+.left {
+    width: 45%;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #c9c4f5;
+    margin-bottom: 35px;
+}
+
+.address-box {
+    margin-bottom: 35px;
+}
+
+.address-title {
+    font-size: 18px;
+    color: #c9c4f5;
+    margin-bottom: 10px;
+}
+
+.address {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    height: 80px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #4a6df0;
+}
+
+.arrow {
+    width: 50px;
+    font-size: 24px;
+}
+
+
+.buy {
+    background-color: #d98a1f;
+    border: 2px solid #e8c9a0;
+    color: #ffd36b;
+}
+
+
+.right {
+    width: 55%;
+}
+
+.fishes {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1000px) {
+    .main {
+        flex-direction: column;
+        padding: 50px 6%;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .address {
+        font-size: 13px;
+    }
+
+    .button {
+        width: 100%;
+        height: 60px;
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .arrow {
+        width: 40px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .address {
+        font-size: 11px;
+    }
+}
